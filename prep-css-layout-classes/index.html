@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Layout Classes</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      /* stylelint-disable block-no-empty */
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 992px;
+        margin: auto;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+      }
+
+      .column {
+        flex-basis: calc(100% / 3);
+        padding-left: 8px;
+        padding-right: 8px;
+        box-shadow: 2px 2px 4px rgba(211, 211, 211);
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Complete the HTML here -->
+    <h1>Indiana Jones</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img
+            src="images/raiders.jpg"
+            alt="Image of the Raiders of the Lost Ark poster" />
+          <h3>Raiders of the Lost Ark</h3>
+          <p>
+            Raiders of the Lost Ark was released on June 12, 1981 with a running
+            time of 115 minutes.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            src="images/temple.jpg"
+            alt="Image of the Temple of Doom poster" />
+          <h3>Temple of Doom</h3>
+          <p>
+            Temple of Doom was released on May 23, 1984 with a running time of
+            118 minutes.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            src="images/crusade.jpg"
+            alt="Image of The Last Crusade poster" />
+          <h3>The Last Crusade</h3>
+          <p>
+            The Last Crusade was released on May 24, 1989 with a running time of
+            128 minutes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -46,3 +46,17 @@ function getCircleCircumference(radius) {
 
 var getCircleCircumferenceResult = getCircleCircumference(5);
 console.log('getCircleCircumference Exercise:', getCircleCircumferenceResult);
+
+function getFullName(firstName, lastName) {
+  return firstName + ' ' + lastName;
+}
+
+var getFullNameResult = getFullName('Juan', 'Ramirez');
+console.log('getFullName Exercise:', getFullNameResult);
+
+function cube(number) {
+  return Math.pow(number, 3);
+}
+
+var cubeResult = cube(5);
+console.log('cube Exercise:', cubeResult);
